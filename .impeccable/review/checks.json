@@ -1,0 +1,49 @@
+{
+  "local_references": "pass",
+  "pdf_links": [
+    {
+      "book": "VENEZUELA BAJO EL SOL",
+      "status": 200,
+      "signature": "%PDF-"
+    },
+    {
+      "book": "El INGENIOSO HIDALGO DE LA MANCHA",
+      "status": 200,
+      "signature": "%PDF-"
+    },
+    {
+      "book": "UNA RONDA DEL TIEMPO",
+      "status": 200,
+      "signature": "%PDF-"
+    },
+    {
+      "book": "CUENTOS IMPERTINENTES",
+      "status": 200,
+      "signature": "%PDF-"
+    },
+    {
+      "book": "LA TIENDA DE LOS MUERTOS",
+      "status": 200,
+      "signature": "%PDF-"
+    },
+    {
+      "book": "HUELLAS CIFRADAS",
+      "status": 200,
+      "signature": "%PDF-"
+    },
+    {
+      "book": "SONETOS",
+      "status": "no original PDF"
+    },
+    {
+      "book": "ILESO ALBEDRÍO",
+      "status": 200,
+      "signature": "%PDF-"
+    },
+    {
+      "book": "REFORMA ELECTORAL",
+      "status": 200,
+      "signature": "%PDF-"
+    }
+  ]
+}

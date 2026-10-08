@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.sites-runtime/
+.sites-checkout-*/
+node_modules/
+*.tar.gz
+sources/edition-research/*.pdf

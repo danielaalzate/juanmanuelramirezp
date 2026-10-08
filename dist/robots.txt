@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://juan-manuel-ramirez-escritor.sotano.chatgpt.site/sitemap.xml

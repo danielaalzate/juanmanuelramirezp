@@ -1,0 +1,47 @@
+{
+  "venezuela-bajo-el-sol": {
+    "year": 2024,
+    "source": "https://img1.wsimg.com/blobby/go/c7ba6307-77f8-4500-93fd-485cecf65d29/downloads/612639b5-1bcb-4414-a46c-cac5b7efa524/VENEZUELA%20BAJO%20EL%20SOL%20(1).pdf?ver=1729719865007",
+    "basis": "Book legal page or author bibliography"
+  },
+  "el-ingenioso-hidalgo": {
+    "year": 2009,
+    "source": "https://img1.wsimg.com/blobby/go/c7ba6307-77f8-4500-93fd-485cecf65d29/downloads/EL%20INGENIOSO%20HIDALGO%20DE%20LA%20MANCHA.pdf?ver=1729719865007",
+    "basis": "Book legal page or author bibliography"
+  },
+  "una-ronda-del-tiempo": {
+    "year": null,
+    "source": null,
+    "basis": "Unconfirmed; PDF has no editorial date"
+  },
+  "cuentos-impertinentes": {
+    "year": null,
+    "source": null,
+    "basis": "Unconfirmed; PDF has no editorial date"
+  },
+  "la-tienda-de-los-muertos": {
+    "year": 2012,
+    "source": "https://www.policia.edu.co/memoria/wp-content/uploads/2020/08/CUADERNILLO20.pdf#page=57",
+    "basis": "Publication documented in contemporary presentation/review"
+  },
+  "huellas-cifradas": {
+    "year": 2015,
+    "source": "https://acorpol.com.co/wp-content/uploads/2017/08/edicion_170_Agosto_2015.pdf#page=19",
+    "basis": "Publication documented in contemporary presentation/review"
+  },
+  "sonetos": {
+    "year": 1993,
+    "source": "https://editorial.urosario.edu.co/pageflip/anexos/HistoriaOrganizacionElectoral_anexo.pdf#page=180",
+    "basis": "Book legal page or author bibliography"
+  },
+  "ileso-albedrio": {
+    "year": 1974,
+    "source": "https://editorial.urosario.edu.co/pageflip/anexos/HistoriaOrganizacionElectoral_anexo.pdf#page=180",
+    "basis": "Book legal page or author bibliography"
+  },
+  "reforma-electoral": {
+    "year": 2004,
+    "source": "https://editorial.urosario.edu.co/pageflip/anexos/HistoriaOrganizacionElectoral_anexo.pdf#page=180",
+    "basis": "Book legal page or author bibliography"
+  }
+}

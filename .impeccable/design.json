@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-05T00:00:00Z",
+  "title": "Design System: Juan Manuel Ramírez Pérez",
+  "extensions": {
+    "typographyMeta": {
+      "display": { "displayName": "Libre Caslon Display", "purpose": "Hero heading, maximum 88px; bundled font registered as Caslon." },
+      "body": { "displayName": "Lato", "purpose": "Body and navigation; local regular and bold faces." }
+    },
+    "shadows": [
+      { "name": "book", "value": "14px 22px 21px -10px rgba(0,0,0,.28)", "purpose": "Physical book object." },
+      { "name": "book-spine", "value": "inset -3px 0 5px rgba(0,0,0,.25)", "purpose": "Spine depth." },
+      { "name": "book-pages", "value": "inset 4px 0 5px rgba(0,0,0,.17)", "purpose": "Page edge depth." }
+    ],
+    "motion": [
+      { "name": "button-state", "value": "background .2s, color .2s", "purpose": "Button color feedback." },
+      { "name": "book-lift", "value": "transform .5s cubic-bezier(.16,1,.3,1)", "purpose": "Hover/focus changes resting rotateY(-13deg) rotateZ(-1deg) to rotateY(-4deg) rotateZ(0deg) translateY(-7px)." },
+      { "name": "reduced-motion", "value": "prefers-reduced-motion: reduce", "purpose": "Disable transitions and animations, preserve resting book transform, use automatic scrolling, suppress automatic hero video playback and pause on preference change." }
+    ],
+    "breakpoints": [
+      { "name": "wide", "value": "min-width: 1650px" },
+      { "name": "compact-desktop", "value": "max-width: 1100px" },
+      { "name": "mobile", "value": "max-width: 760px" },
+      { "name": "small-mobile", "value": "max-width: 420px" }
+    ],
+    "themeBehavior": "Valid tema query overrides localStorage jmr-theme, then SITE_CONFIG.defaultTheme. Footer choices persist locally. Orange changes only brand, brand-hover and accent.",
+    "responsiveStates": "Desktop catalog: 3 columns. At <=760px: 2 columns, collapsed navigation with a two-column open panel, stacked major content grids, three featured books. At <=420px: author preview stacks; catalog remains two columns.",
+    "heroMedia": "No actual study recording supplied. Label generated fallback as illustrative. SITE_CONFIG.heroVideo enables the real-source player and pause control; heroPoster config updates the image and video poster; heroPosterIllustrative controls its attribution. Media errors hide the failed video and restore the fallback notice."
+  },
+  "components": [
+    {
+      "name": "Primary Button", "kind": "button", "refersTo": "button-primary",
+      "description": "Download or subscription action.",
+      "html": "<a class=\"ds-primary\" href=\"#\">Descargar libro</a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 23px;background:var(--brand,#233e52);color:var(--on-brand,#fffaf0);border:1px solid var(--brand,#233e52);border-radius:3px;font:700 15px Lato,Arial,sans-serif;text-decoration:none;transition:background .2s,color .2s}.ds-primary:hover{background:var(--brand-hover,#172f41);border-color:var(--brand-hover,#172f41)}.ds-primary:focus-visible{outline:3px solid var(--brand,#233e52);outline-offset:5px}.ds-primary:active{filter:brightness(.9)}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Outline Button", "kind": "button", "refersTo": "button-outline",
+      "description": "Secondary action on cream surfaces.",
+      "html": "<a class=\"ds-outline\" href=\"#\">Conocer al autor</a>",
+      "css": ".ds-outline{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 23px;background:transparent;color:var(--brand,#233e52);border:1px solid var(--brand,#233e52);border-radius:3px;font:700 15px Lato,Arial,sans-serif;text-decoration:none;transition:background .2s,color .2s}.ds-outline:hover{background:var(--brand,#233e52);color:var(--on-brand,#fffaf0)}.ds-outline:focus-visible{outline:3px solid var(--brand,#233e52);outline-offset:5px}.ds-outline:active{filter:brightness(.9)}@media(prefers-reduced-motion:reduce){.ds-outline{transition:none}}"
+    },
+    {
+      "name": "Navigation", "kind": "nav", "description": "Four-route navigation with current-page underline.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Inicio</a><a href=\"#\">Biografía</a><a href=\"#\">Libros</a><a href=\"#\">Blog</a></nav>",
+      "css": ".ds-nav{display:flex;gap:34px;background:var(--cream,#f6f2e9);font:16px Lato,Arial,sans-serif}.ds-nav a{position:relative;display:flex;align-items:center;min-height:44px;color:var(--ink,#24221f);text-decoration:none}.ds-nav a:hover,.ds-nav a[aria-current=page]{color:var(--brand,#233e52)}.ds-nav a[aria-current=page]:after{content:'';position:absolute;height:2px;background:var(--brand,#233e52);bottom:0;left:0;right:0}.ds-nav a:focus-visible{outline:3px solid var(--brand,#233e52);outline-offset:5px}"
+    },
+    {
+      "name": "Category Filter", "kind": "chip", "description": "Pressed state identifies the active catalog category.",
+      "html": "<div class=\"ds-filters\"><button aria-pressed=\"true\">Todos</button><button aria-pressed=\"false\">Poesía</button></div>",
+      "css": ".ds-filters{display:flex;gap:18px}.ds-filters button{border:0;background:transparent;color:var(--muted,#625e55);min-height:44px;padding:8px 15px;font:17px Lato,Arial,sans-serif;cursor:pointer}.ds-filters button[aria-pressed=true]{background:var(--brand,#233e52);color:var(--on-brand,#fffaf0);border-radius:3px}.ds-filters button:hover{color:var(--brand,#233e52)}.ds-filters button[aria-pressed=true]:hover{color:white}.ds-filters button:focus-visible{outline:3px solid var(--brand,#233e52);outline-offset:5px}"
+    },
+    {
+      "name": "Synopsis Disclosure", "kind": "custom", "description": "Native details/summary for book synopses.",
+      "html": "<details class=\"ds-synopsis\"><summary>Sinopsis</summary><p>Texto de la sinopsis.</p></details>",
+      "css": ".ds-synopsis{font:15px/1.65 Lato,Arial,sans-serif}.ds-synopsis summary{cursor:pointer;min-height:44px;display:flex;align-items:center;gap:10px;color:var(--brand,#233e52)}.ds-synopsis summary:before{content:'+';font:24px Lato,Arial,sans-serif}.ds-synopsis[open] summary:before{content:'−'}.ds-synopsis summary:focus-visible{outline:3px solid var(--brand,#233e52);outline-offset:5px}"
+    }
+  ],
+  "narrative": {
+    "overview": "Approved warm editorial option A, adapted to blue ink with an interchangeable orange palette. Literary serif headings, warm cream surfaces and restrained rules frame the author's writing. Preserve this accepted direction.",
+    "keyCharacteristics": ["Warm cream surfaces", "Blue ink with an orange alternative", "Original covers in physical CSS book mockups"],
+    "rules": [],
+    "dos": ["Do preserve the approved warm editorial blue composition and interchangeable orange palette.", "Do keep original cover pixels and use CSS to construct book depth.", "Do retain clear download actions, visible keyboard focus and reduced-motion behavior."],
+    "donts": ["Don't describe the illustrative hero image as an actual author recording.", "Don't animate a still image to imply that real footage has been supplied.", "Don't invent missing publication facts, testimonials or download files."]
+  }
+}
+
