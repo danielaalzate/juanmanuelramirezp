@@ -44,7 +44,7 @@ def whatsapp():
 
 def page(current,title,description,body):
  path={'inicio':'','biografia':'biografia/','libros':'libros/','blog':'blog/'}[current]
- canonical='https://juan-manuel-ramirez-escritor.sotano.chatgpt.site/'+path
+ canonical='https://juanmanuelramirezescritor.com/'+path
  return f'''<!doctype html><html lang="es" data-theme="blue"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} · Juan Manuel Ramírez Pérez</title><meta name="description" content="{escape(description,quote=True)}"><meta name="theme-color" content="#233e52"><meta property="og:title" content="{escape(title,quote=True)} · Juan Manuel Ramírez Pérez"><meta property="og:description" content="{escape(description,quote=True)}"><meta property="og:type" content="website"><meta property="og:url" content="{canonical}"><link rel="canonical" href="{canonical}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="preload" href="/assets/fonts/display-0.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="/styles.css"><script src="/site-config.js"></script><script src="/site.js" defer></script></head><body>{header(current)}<main id="contenido">{body}</main>{footer()}{whatsapp()}</body></html>'''
 
 def year_label(b):
@@ -92,8 +92,8 @@ for alias,target in [('inicio','/'),('biografía','/biografia/')]:
  folder=OUT/alias;folder.mkdir(exist_ok=True)
  (folder/'index.html').write_text(f'<!doctype html><html lang="es"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url={target}"><title>Juan Manuel Ramírez Pérez</title></head><body><a href="{target}">Continuar</a></body></html>',encoding='utf-8')
 (OUT/'favicon.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="10" fill="#233e52"/><path d="M18 15h28v34H18z" fill="none" stroke="#f6f2e9" stroke-width="2"/><path d="M25 15v34m6-24h9m-9 7h9m-9 7h6" stroke="#f6f2e9" stroke-width="2"/></svg>')
-(OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: https://juan-manuel-ramirez-escritor.sotano.chatgpt.site/sitemap.xml\n')
-(OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>https://juan-manuel-ramirez-escritor.sotano.chatgpt.site/{"" if k=="inicio" else k+"/"}</loc></url>' for k,_,_,_ in pages)+'</urlset>')
+(OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: https://juanmanuelramirezescritor.com/sitemap.xml\n')
+(OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>https://juanmanuelramirezescritor.com/{"" if k=="inicio" else k+"/"}</loc></url>' for k,_,_,_ in pages)+'</urlset>')
 (OUT/'assets/books.json').write_text(json.dumps(books,ensure_ascii=False,indent=2),encoding='utf-8')
 print('Generated four complete pages, nine covers, eight PDF actions.')
 

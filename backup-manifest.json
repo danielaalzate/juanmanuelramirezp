@@ -1,24 +1,24 @@
 {
   "date": "2026-10-14",
-  "published_url": "https://juan-manuel-ramirez-escritor.sotano.chatgpt.site/",
+  "published_url": "https://juanmanuelramirezescritor.com/",
   "files": {
     "dist/favicon.svg": "ad00357098e3294d2d6a1c0075ddbe4a767100f7d7de2a7a6e711f984a49dd4e",
-    "dist/index.html": "76d305fc9c8cad70272a881ca24812d57430640a865d361149e0cd881dba785a",
-    "dist/robots.txt": "dac12069a71e240694254355cb09665002509a9185ca507b488fcdbb5e482c19",
+    "dist/index.html": "4ca5497f531ad396caaca2d071f6109a89a06101679172d83ca56ac9835fc903",
+    "dist/robots.txt": "1148a0d61fac3918a463292c10fd25bebc846a0c7156db3e1c9eb2fe93a00b0c",
     "dist/site-config.js": "ebb9d5fa62d32dd028b2c50f37d908691f338d4258f01f1b2982ea63ea7e218d",
     "dist/site.js": "3d06e7ebb181383f0861a91b8ed3e22c808e7a454082bc6d1ce9481bcb43be4f",
-    "dist/sitemap.xml": "b6b0deb2fec4ed0babe9c27aabfd77160ca0cf83fa487ee9ccd6d02bbc5e1c3a",
+    "dist/sitemap.xml": "39aa961bb3755f1502ff6aca683a6468c0ce14ed3f310aae499bf61468fdd7dc",
     "dist/styles.css": "8893603e24ec807382a53271c25c30b263e3f4ecce9442e6bd4fb4f23a457fde",
     "dist/assets/autor.png": "4e29aaadd380759d2284b03f00a4a30577e772ced4d51ccc4c4acec6b92e7263",
     "dist/assets/books.json": "2e7670d01318e2c97b0ac7c11bee226bb144d76d3acccac122a58696a670f906",
     "dist/assets/entrevista.webp": "b6b9f4eff8bd317d3b44bb77dddd2c56345f95e8d3bc4c159bd53c19eb662607",
     "dist/assets/estudio.webp": "e388bb7be2379be175d3e55565c48c00c9f007b505821199f2d64b845e03e93f",
     "dist/assets/juan-manuel-escribiendo.mp4": "2c1c2e25ffda49c4b327ec05600305af895f61bc9c3e23d5065d28c2b1f2a3ad",
-    "dist/biografia/index.html": "ecc3509fdebb75df4896781780f9e5c7aa0fcba18f6dfbed3d00d96f6d0f2b53",
+    "dist/biografia/index.html": "ed5a3a915ea92424489f9f34a82cae73e7d157bb0115084102b8af455b0ddeaa",
     "dist/biografía/index.html": "abdec29ab408a30cc0061581b650b59035f3f85b45a5f490df8ae40f841af0fa",
-    "dist/blog/index.html": "18a71365de961a309a19f714b4923888fd07b86ad005ca0ee6a994ad423f22ec",
+    "dist/blog/index.html": "ccaca658302689e257ed5f61c0ba1bc258d5599c84917a21499938995f8e4194",
     "dist/inicio/index.html": "e06b5f757ccfa6a6e4df326ef98a2b33924415af6fbfeebe1514bdb3391b5bac",
-    "dist/libros/index.html": "7878648e64d2a57e06fb40b02367459ff46a5d6608fb17fd04edbfeadfe9f1c4",
+    "dist/libros/index.html": "7ce527bed95892b155dea7a38438f2b6e948a1d1a5094b0e6c30874c8fdadf05",
     "dist/assets/covers/cuentos-impertinentes.png": "5436b9c51a9278afdb777ef97d71641d5411b2c3e90000d72b3d2e25c29e8e96",
     "dist/assets/covers/el-ingenioso-hidalgo.png": "883a59ecec81b17f7bd8d26cb5822c9426b92970215901761ae0b0bb6c3761ce",
     "dist/assets/covers/huellas-cifradas.png": "e938c3d0597061d1ccfe4d3d3d7b1a341e7b0aa7480023444393dc03586a9090",
@@ -45,5 +45,6 @@
     "resources/libros/reforma-electoral.pdf": "e7b3b589d3758319bc4556f1e716b83295b703e566273906ac17ee65c45d58e5",
     "resources/libros/una-ronda-del-tiempo.pdf": "76892c4df6a74d7f2dba46932a613190ebd2984943bd190528bf9b16bfae3a01",
     "resources/libros/venezuela-bajo-el-sol.pdf": "be411d067f027354d7de344d81c3e80b32bdb3cff618d1d94dc7124d2003ee2f"
-  }
+  },
+  "cloudflare_preview": "https://juan-manuel-ramirez.pages.dev/"
 }
