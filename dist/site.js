@@ -1,21 +1,7 @@
 (() => {
   const config = window.SITE_CONFIG;
-  const queryTheme = new URLSearchParams(location.search).get('tema');
-  let storedTheme = null;
-  try { storedTheme = localStorage.getItem('jmr-theme'); } catch {}
-  const setTheme = (theme) => {
-    document.documentElement.dataset.theme = theme === 'orange' ? 'orange' : 'blue';
-    document.querySelectorAll('[data-theme-choice]').forEach(button => {
-      button.setAttribute('aria-pressed', String(button.dataset.themeChoice === document.documentElement.dataset.theme));
-    });
-  };
-  setTheme(['blue', 'orange'].includes(queryTheme) ? queryTheme : storedTheme || config.defaultTheme);
+  document.documentElement.dataset.theme = 'blue';
   document.addEventListener('DOMContentLoaded', () => {
-    setTheme(document.documentElement.dataset.theme);
-    document.querySelectorAll('[data-theme-choice]').forEach(button => button.addEventListener('click', () => {
-      setTheme(button.dataset.themeChoice);
-      try { localStorage.setItem('jmr-theme', button.dataset.themeChoice); } catch {}
-    }));
     const menuButton = document.querySelector('.menu-toggle');
     const nav = document.querySelector('#primary-nav');
     menuButton?.addEventListener('click', () => {
