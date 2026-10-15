@@ -4,6 +4,13 @@
   document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.querySelector('.menu-toggle');
     const nav = document.querySelector('#primary-nav');
+    const homeLink = nav?.querySelector('a[aria-current="page"][href="/"]');
+    if (homeLink && document.querySelector('.hero')) {
+      const updateHomeLink = () => { homeLink.hidden = window.scrollY < 80; };
+      updateHomeLink();
+      window.addEventListener('scroll', updateHomeLink, { passive: true });
+      window.addEventListener('pageshow', updateHomeLink);
+    }
     menuButton?.addEventListener('click', () => {
       const open = menuButton.getAttribute('aria-expanded') !== 'true';
       menuButton.setAttribute('aria-expanded', String(open));
